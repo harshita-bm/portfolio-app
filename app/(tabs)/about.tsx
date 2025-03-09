@@ -31,7 +31,7 @@ const About: React.FC = () => {
               <Icon name="github" size={28} color="white" style={styles.icon} />
             </TouchableOpacity>
 
-            <TouchableOpacity onPress={() => Linking.openURL("https://harshita-bm.github.io/")}>
+            <TouchableOpacity onPress={() => Linking.openURL("https://delicate-boba-d6db5b.netlify.app/")}>
               <Icon name="globe" size={28} color="white" style={styles.icon} />
             </TouchableOpacity>
           </View>
