@@ -21,16 +21,53 @@ import { useNavigation } from "@react-navigation/native";
 
 const categoryData = {
   "arts-crafts": [
+    require("../asset/hobbies/a11.jpg"),
+    require("../asset/hobbies/a12.jpg"),
+    require("../asset/hobbies/a13.jpg"),
     require("../asset/hobbies/arts1.jpg"),
     require("../asset/hobbies/arts2.jpg"),
     require("../asset/hobbies/arts3.jpg"),
     require("../asset/hobbies/arts4.jpg"),
+    require("../asset/hobbies/arts5.jpg"),
+    require("../asset/hobbies/arts6.jpg"),
+    require("../asset/hobbies/arts7.jpg"),
+    require("../asset/hobbies/arts8.jpg"),
+    require("../asset/hobbies/arts9.jpg"),
+    require("../asset/hobbies/arts10.jpg"),
+    require("../asset/hobbies/arts11.jpg"),
+    require("../asset/hobbies/arts12.jpg"),
+    require("../asset/hobbies/arts13.jpg"),
+    require("../asset/hobbies/arts14.jpg"),
+    require("../asset/hobbies/arts15.jpg"),
+    require("../asset/hobbies/arts16.jpg"),
+    require("../asset/hobbies/arts17.jpg"),
+    require("../asset/hobbies/arts18.jpg"),
+    require("../asset/hobbies/arts19.jpg"),
+    require("../asset/hobbies/arts20.jpg"),
+    require("../asset/hobbies/arts21.jpg"),
+    
   ],
   garden: [
-    require("../asset/hobbies/garden1.jpg"),
-    require("../asset/hobbies/garden2.jpg"),
-    require("../asset/hobbies/garden3.jpg"),
-    require("../asset/hobbies/garden4.jpg"),
+    require("../asset/hobbies/g1.jpg"),
+    require("../asset/hobbies/g2.jpg"),
+    require("../asset/hobbies/g3.jpg"),
+    require("../asset/hobbies/g4.jpg"),
+    require("../asset/hobbies/g5.jpg"),
+    require("../asset/hobbies/g6.jpg"),
+    require("../asset/hobbies/g7.jpg"),
+    require("../asset/hobbies/g8.jpg"),
+    require("../asset/hobbies/g9.jpg"),
+    require("../asset/hobbies/g10.jpg"),
+    require("../asset/hobbies/g11.jpg"),
+   
+    require("../asset/hobbies/g14.jpg"),
+    require("../asset/hobbies/g15.jpg"),
+    require("../asset/hobbies/g16.jpg"),
+    require("../asset/hobbies/g17.jpg"),
+    require("../asset/hobbies/g18.jpg"),
+    require("../asset/hobbies/g19.jpg"),
+    require("../asset/hobbies/g21.jpg"),
+   
   ],
 };
 
@@ -73,11 +110,11 @@ const HobbyCategory: React.FC = () => {
   return (
     <GestureHandlerRootView style={styles.container}>
       {/* ✅ Fixed Back Button (Navigates to Hobbies Page) */}
-      <TouchableOpacity onPress={() => navigation.navigate("Hobbies")} style={styles.backButton}>
+      {/* <TouchableOpacity onPress={() => navigation.navigate("Hobbies")} style={styles.backButton}>
         <Text style={styles.backButtonText}>← Back</Text>
-      </TouchableOpacity>
+      </TouchableOpacity> */}
 
-      <Text style={styles.title}>{validId ? validId.toUpperCase() : "Not Found"} Gallery</Text>
+      <Text style={styles.title}>{validId ? validId.toUpperCase() : "Not Found"} </Text>
 
       {/* Image Grid (Ensures 2 in a Row) */}
       <ScrollView contentContainerStyle={styles.gallery}>
@@ -149,11 +186,13 @@ const styles = StyleSheet.create({
     paddingHorizontal: 10,
   },
   image: {
-    width: screenWidth * 0.45, // Ensures 2 in a row
-    height: screenWidth * 0.45,
+    width: screenWidth * 0.3, // Adjust for spacing
+    height: screenWidth * 0.3,
     borderRadius: 15,
     marginBottom: 10,
+    marginHorizontal: screenWidth * 0.01, // Add small horizontal margin
   },
+  
   errorText: {
     color: "white",
     fontSize: 18,
